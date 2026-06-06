@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 2rem;
+}
+nav {
+    background: #444;
+    padding: 0.5rem;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+section {
+    padding: 2rem;
+}
+.project-card {
+    display: inline-block;
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+}
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Flavian Afandi</h1>
+        <p>Web Developer | Problem Solver</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate developer with 1+ years of experience building web and mobile apps.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">Student Management System</div>
+        <div class="project-card">To-do List App</div>
+        <div class="project-card">Online Shop Website</div>
+    </section>
+    <section id="contact">
+        <h2>Contact:0115123101</h2>
+        <p>Email: flavianafandi9@gmail.com</p>
+        <button id="alertBtn">Say Hello</button>
+    </section>
+    <script src="script.js">
+document.getElementById('alertBtn').addEventListener('click', function() {
+    alert('Hello! Thanks for visiting.');
+});
+    </script>
+    
+
+</body>
+</html>
